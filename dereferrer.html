@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Weiterleitung &hellip;</title>
+</head>
+<body>
+<div align="center">
+  Dereferring &hellip;
+</div>
+<em>Script by <a href="http://www.naden.de">http://www.naden.de</a></em>
+<script>
+if(location.hash.length > 0) {
+  var element = document.createElement('meta');
+  if(element) {
+    element.setAttribute('http-equiv', 'refresh');
+    element.setAttribute('content', '0; URL=' + location.hash.substring(1));
+  }
+  document.getElementsByTagName('head')[0].appendChild(element);
+}
+</script>
+</body>
+</html>
